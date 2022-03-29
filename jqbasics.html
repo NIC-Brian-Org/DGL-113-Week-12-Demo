@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This page is used to illustrate fundamental jQuery features:
+       select elements, change selected element content, event handling, and special effects.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="examples.css" />
+    <title>jQuery Examples</title>
+    <style>
+      /* This rule would be needed for moving the img horizontally by chang its left property */
+      header img{
+        position: relative;
+        left:0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/img0.jpg" alt="Header image" />
+      <!-- nav>
+        <ul>
+          <li>
+            <a href="jqbasics.html">jQuery Basics</a>
+          </li>
+          <li>
+            <a href="jqeffect.html">Special Effects</a>
+          </li>
+          <li>
+            <a href="jqevthandling.html">Event Handling</a>
+          </li>
+        </ul>
+      </nav -->
+    </header>
+    <main id="main">
+      <h3>Examples - jQuery Fundamentals</h3>
+       <div id="buttons">
+        <button>Select</button>
+        <button>Insert & Replace</button>
+        <button>Show Effects</button>
+      </div>
+      <section id="section1">
+        <h3>Things To Do</h3>
+        <ol id="toDoList">
+          <li class="chore">Mow the lawn</li>
+          <li class="chore">Clean the windows</li>
+          <li class="school">Answer emails</li>
+          <li class="school">Attend online classes</li>
+        </ol>
+        <p id="toDoNotes">
+          Make sure all these are completed by 8pm so you can watch the game on
+          TV!
+        </p>
+      </section>
+      <section id="section2">
+        <h3>Output Area</h3>
+      </section>
+    </main>
+    <footer id="footer">&copy; DGL113 Introduction to JavaScript</footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jqbasics.js"></script>
+  </body>
+</html>
