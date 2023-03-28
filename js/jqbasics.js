@@ -81,11 +81,11 @@ function effects() {
   // chained effect methods are executed from left to right
   $("ol").hide().slideDown(2000).hide(2000).show(2000);
 
-  $("h3:first").on("click", function (e) {
+  $("h1").on("click", function (e) {
     $(e.target).hide(2000).show(2000);
   });
 
-  $("h3:eq(1)").on("click", function (e) {
+  $("h3").on("click", function (e) {
     $(e.target).slideUp(2000).slideDown(2000);
   });
 
@@ -99,8 +99,8 @@ function effects() {
   // add <h4> text to prompt the user - the only <h4> on the page
   if ($("h4").length == 0) {
     let msg =
-      "<h4>Clcik on the 1st and the 2nd h3, the section, as well as an li to see the effects</h4>";
-    $(msg).insertAfter($("div"));
+      "<h4>Click on the h1, h3, the section, as well as an li to see the effects</h4>";
+    $(msg).insertAfter($("#buttons"));
   }
 }
 /* 
